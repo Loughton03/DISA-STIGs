@@ -1,4 +1,5 @@
-![image](https://i.imgur.com/)
+<img width="937" height="536" alt="image" src="https://github.com/user-attachments/assets/5ba50597-29a7-4573-a009-6c4ca59b46b5" />
+
 
 # Defense Information Systems Agency - Security Technical Implementation Guides (DISA - STIGs)
 STIG Remediation Template

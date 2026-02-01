@@ -94,7 +94,7 @@ After verifying locally, I restarted the machine to ensure the configuration was
 
 ![image](https://i.imgur.com/)
 
-Checking the HKEY_LOCAL_MACHINE path for creation and correct value of the DWORD. </br>
+
 
 ![image](https://i.imgur.com/)
 
@@ -105,9 +105,9 @@ Scan Results: </br>
 ![image](https://i.imgur.com/)
 
 ## Summary
-The failed STIG compliance item was identified through Tenable Windows Compliance Checks during a scan of the Windows 11 VM on the internal scanning infrastructure. The scan was executed from Local-Scan-Engine-01, targeting the VM’s private IP address, using administrative credentials to enable a complete compliance evaluation. The compliance audit selected was aligned to the operating system baseline (DISA Microsoft Windows 11 STIG v2r4). To reduce scan time and resource usage, all plugins were disabled except Windows Compliance Checks (Plugin ID: 24760).
+The failed STIG compliance item was identified through Tenable Windows Compliance Checks during a scan of the Windows 11 VM on the internal scanning infrastructure. The scan was executed from Local-Scan-Engine-01, targeting the VM’s private IP address, using administrative credentials to enable a complete compliance evaluation. The compliance audit selected was aligned to the operating system baseline (DISA Microsoft Windows 11 STIG v2r4). 
 
-Once the scan results identified the failing STIG-ID, I researched the remediation guidance within the Tenable Audits database and implemented the fix using a PowerShell script built from the STIG remediation template. After execution, I validated the remediation locally by confirming the policy/registry configuration (including verifying the correct HKEY_LOCAL_MACHINE path and DWORD value when applicable). Following a system restart, I re-scanned the endpoint in Tenable using the same parameters and confirmed the STIG compliance check associated with the STIG-ID passed successfully.
+Once the scan results identified the failing STIG-ID, I researched the remediation guidance within the Tenable Audits database and implemented the fix using a PowerShell script built from the STIG remediation template. After execution, I validated the remediation locally by confirming the policy/registry configuration. Following a system restart, I re-scanned the endpoint in Tenable using the same parameters and confirmed the STIG compliance check associated with the STIG-ID passed successfully.
 
 
 ## Response Taken

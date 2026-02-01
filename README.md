@@ -6,25 +6,16 @@ STIG Remediation Template
 
 ## Windows 11 STIG Remediation Scripts:
 
-WN11-AU-000050
-
-WN11-CC-000005
-
-WN11-CC-000090
-
-WN11-CC-000315
-
-WN11-EP-000310
-
-WN11-CC-000197
-
-WN11-SO-000220
-
-WN11-SO-000230
-
-WN11-UR-000070
-
-WN11-CC-000285
+- WN11-CC-000090 - Group Policy objects must be reprocessed even if they have not changed.
+- WN11-AU-000050 - The system must be configured to audit Detailed Tracking - Process Creation success.
+- WN11-EP-000310 - Windows 11 Kernel (Direct Memory Access) DMA Protection must be enabled.
+- WN11-CC-000110 - Printing over HTTP must be prevented.
+- WN11-CC-000197 - Microsoft consumer experiences must be turned off.
+- WN11-CC-000285 - The Remote Desktop Session Host must require secure RPC communications.
+- WN11-SO-000075 - The required legal notice must be configured to display before console logon.
+- WN11-CC-000070 - Virtualization-based Security must be enabled on Windows 11 with the platform security level configured to Secure Boot or Secure Boot with DMA Protection.
+- WN11-AU-000560 - Windows 11 must be configured to audit other Logon/Logoff Events Successes.
+- WN11-CC-000255 - The use of a hardware security device with Windows Hello for Business must be enabled.
 
 ## Platforms and Languages Leveraged:
 
@@ -43,33 +34,30 @@ To begin, I scanned the affected Windows 11 virtual machine with Tenable and rev
 1. Perform a vulnerability scan using Tenable using the Windows Compliance Checks.
 
 I initiated a Tenable scan of the target Windows 11 VM using the appropriate compliance configuration and administrative credentials to ensure the results accurately reflected the system configuration. </br>
-![image](https://i.imgur.com/)
+
+<img width="1380" height="1001" alt="image" src="https://github.com/user-attachments/assets/0ca2d916-4a0f-4114-bed5-705859bb18b7" />
+
 
 2. Search the STIG-ID using Tenable Audits
 
-After the scan completed, I located the compliance failure and identified the STIG-ID associated with it. I then searched for that STIG-ID within the Tenable Audits database:
+After the scan completed, I located the compliance failure and identified the STIG-ID associated with it. I then searched for that STIG-ID within the Tenable Audits database: Tenable Audits: https://www.tenable.com/audits
 
-* Tenable Audits: https://www.tenable.com/audits
+<img width="1880" height="1070" alt="image" src="https://github.com/user-attachments/assets/4a209ada-d3f7-4ad3-90d9-801b6de47358" />
 
 
 3. Research the solution
 
 Within the Tenable Audit entry for the identified STIG-ID, I reviewed the remediation section and captured the exact steps required to bring the system into compliance. This typically included specific policy requirements and, in many cases, registry changes such as creating a missing key and enforcing the correct value (often a DWORD).
 </br>
-![image](https://i.imgur.com/)
 
+<img width="1881" height="992" alt="image" src="https://github.com/user-attachments/assets/ae3090af-502a-485f-a666-f6dc14bbf154" />
 
-4. Researched the solution.
-After searching for the specified STIG-ID within the Tenable Audit database, the solution to remediate the vulnerbility was given in steps.
-
-Example solution:
-![image](https://i.imgur.com/)
 
 4. Use the STIG Remediation Template to write a PowerShell solution
 
 To ensure consistency and safe execution, I used a structured remediation template to develop a PowerShell script aligned to the specific STIG requirement:
 
-* STIG Remediation Template: https://github.com/behan101/DISA-STIGs/blob/main/stig_remediation_template
+<img width="1378" height="616" alt="image" src="https://github.com/user-attachments/assets/edcb8df7-274b-40c4-b7a4-f4d991f21900" />
 
 The script was written to be clear, auditable, and reusable—focusing on:
 

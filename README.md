@@ -20,7 +20,7 @@ STIG Remediation Template
   
 - **[WN11-CC-000070 - Virtualization-based Security must be enabled on Windows 11 with the platform security level configured to Secure Boot or Secure Boot with DMA Protection.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000070_Remediation_Script.ps1)**
   
-- **[WN11-AU-000560 - Windows 11 must be configured to audit other Logon/Logoff Events Successes.]()**
+- **[WN11-AU-000560 - Windows 11 must be configured to audit other Logon/Logoff Events Successes.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-AU-000560_Remediation_Script.ps1)**
   
 - **[WN11-CC-000255 - The use of a hardware security device with Windows Hello for Business must be enabled.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000255_Remediation_Script.ps1)**
 

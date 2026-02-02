@@ -25,6 +25,8 @@
   
 - **[WN11-CC-000255 - The use of a hardware security device with Windows Hello for Business must be enabled.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000255_Remediation_Script.ps1)**
 
+- **[WN11-UR-000070 - The 'Deny access to this computer from the network' user right on workstations must be configured to prevent access from highly privileged domain accounts and local accounts on domain systems and unauthenticated access on all systems.]**()
+
 ## Platforms and Languages Leveraged:
 
 -Windows 11 Virtual Machines (Microsoft Azure) </br>

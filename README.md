@@ -39,29 +39,32 @@ To begin, I scanned the affected Windows 11 virtual machine with Tenable and rev
 
 ## Steps Taken
 
-1. Perform a vulnerability scan using Tenable using the Windows Compliance Checks.
+#### 1. Perform a vulnerability scan using Tenable using the Windows Compliance Checks.
 
 I initiated a Tenable scan of the target Windows 11 VM using the appropriate compliance configuration and administrative credentials to ensure the results accurately reflected the system configuration. </br>
 
 <img width="1380" height="1001" alt="image" src="https://github.com/user-attachments/assets/0ca2d916-4a0f-4114-bed5-705859bb18b7" />
 
+---
 
-2. Search the STIG-ID using Tenable Audits
+#### 2. Search the STIG-ID using Tenable Audits
 
 After the scan completed, I located the compliance failure and identified the STIG-ID associated with it. I then searched for that STIG-ID within the Tenable Audits database: Tenable Audits: https://www.tenable.com/audits
 
 <img width="1880" height="1070" alt="image" src="https://github.com/user-attachments/assets/4a209ada-d3f7-4ad3-90d9-801b6de47358" />
 
+---
 
-3. Research the solution
+#### 3. Research the solution
 
 Within the Tenable Audit entry for the identified STIG-ID, I reviewed the remediation section and captured the exact steps required to bring the system into compliance. This typically included specific policy requirements and, in many cases, registry changes such as creating a missing key and enforcing the correct value (often a DWORD).
 </br>
 
 <img width="1881" height="992" alt="image" src="https://github.com/user-attachments/assets/ae3090af-502a-485f-a666-f6dc14bbf154" />
 
+---
 
-4. Use the STIG Remediation Template to write a PowerShell solution
+#### 4. Use the STIG Remediation Template to write a PowerShell solution
 
 To ensure consistency and safe execution, I used a structured remediation template to develop a PowerShell script aligned to the specific STIG requirement:
 
@@ -71,45 +74,40 @@ The script was written to be clear, auditable, and reusable—focusing on:
 
 * Validating whether the required registry path/value already exists.
 * Creating missing keys when necessary.
-* Enforce the required value type (e.g., DWORD) and correct data.
 * Logging output so execution results can be reviewed.
  </br>
 
-![image](https://i.imgur.com/)
+---
 
-5. Test and execute the script in PowerShell ISE
+#### 5. Test and execute the script in PowerShell ISE
 
 Using PowerShell ISE, I incrementally tested the logic to ensure it performed the intended change without unintended side effects. Once confirmed, I executed the script on the target system and captured execution output for documentation.
  </br>
 
-![image](https://i.imgur.com/)
+<img width="1881" height="1081" alt="image" src="https://github.com/user-attachments/assets/96debe85-5e67-4ddd-817f-0beb56b940c4" />
 
-6. Remediation validation after script execution
+---
+
+#### 6. Remediation validation after script execution
 
 After execution, I validated the change in two ways:
 
 Local validation (Windows configuration check):
-I located the corresponding policy/setting on the Windows 11 machine and confirmed the value matched the expected STIG configuration. Where applicable, this included checking the registry:
+- I located the corresponding policy/setting on the Windows 11 machine and confirmed the value matched the expected STIG configuration. Where applicable, this included checking the registry:
 
-* Verifying the HKEY_LOCAL_MACHINE registry path exists.
 * Confirming the presence of the expected value.
 * Confirming the configured data matches the STIG requirement.
+
+<img width="1875" height="305" alt="image" src="https://github.com/user-attachments/assets/593e40c4-416d-4a41-9c98-feebd10b4008" />
+
 
 Operational validation (Tenable re-scan):
 After verifying locally, I restarted the machine to ensure the configuration was fully applied and persisted, then ran a follow-up Tenable scan using the same compliance audit settings. Once the STIG-ID no longer appeared as a compliance failure, I confirmed that the vulnerability had been remediated.
 
-
-![image](https://i.imgur.com/)
-
-
-
-![image](https://i.imgur.com/)
-
-After validating, I restart the machine before scanning with Tenable for another audit to ensure the changes are saved and implemented.
-
 Scan Results: </br>
 
-![image](https://i.imgur.com/)
+<img width="1437" height="1096" alt="image" src="https://github.com/user-attachments/assets/9cb33e92-8cc1-41c9-8fd3-c4815d5cdce4" />
+
 
 ## Summary
 The failed STIG compliance item was identified through Tenable Windows Compliance Checks during a scan of the Windows 11 VM on the internal scanning infrastructure. The scan was executed from Local-Scan-Engine-01, targeting the VM’s private IP address, using administrative credentials to enable a complete compliance evaluation. The compliance audit selected was aligned to the operating system baseline (DISA Microsoft Windows 11 STIG v2r4). 

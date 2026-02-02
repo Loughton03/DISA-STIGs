@@ -14,7 +14,7 @@ STIG Remediation Template
  
 - **[WN11-CC-000110 - Printing over HTTP must be prevented.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000110_Remediation_Script.ps1)**
  
-- **[WN11-CC-000197 - Microsoft consumer experiences must be turned off.]()**
+- **[WN11-CC-000197 - Microsoft consumer experiences must be turned off.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000197_Remediation_Script.ps1)**
   
 - **[WN11-CC-000285 - The Remote Desktop Session Host must require secure RPC communications.]()**
   

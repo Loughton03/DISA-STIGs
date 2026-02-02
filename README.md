@@ -24,13 +24,6 @@ STIG Remediation Template
   
 - **[WN11-CC-000255 - The use of a hardware security device with Windows Hello for Business must be enabled.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000255_Remediation_Script.ps1)**
 
-
-
-
-- **[WN11-CC-000090 - Group Policy objects must be reprocessed even if they have not changed.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000090_Remediation_Script.ps1)**
-      
-
-
 ## Platforms and Languages Leveraged:
 
 -Windows 11 Virtual Machines (Microsoft Azure) </br>

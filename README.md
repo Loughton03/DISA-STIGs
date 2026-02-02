@@ -6,7 +6,8 @@ STIG Remediation Template
 
 ## Windows 11 STIG Remediation Scripts:
 
-- WN11-CC-000090 - Group Policy objects must be reprocessed even if they have not changed.
+- **[WN11-CC-000090 - Group Policy objects must be reprocessed even if they have not changed.](https://github.com/Loughton03/Azure-SOC)**
+- 
 - WN11-AU-000050 - The system must be configured to audit Detailed Tracking - Process Creation success.
 - WN11-EP-000310 - Windows 11 Kernel (Direct Memory Access) DMA Protection must be enabled.
 - WN11-CC-000110 - Printing over HTTP must be prevented.

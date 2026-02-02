@@ -6,7 +6,29 @@ STIG Remediation Template
 
 ## Windows 11 STIG Remediation Scripts:
 
-- **[WN11-CC-000090 - Group Policy objects must be reprocessed even if they have not changed.](https://github.com/Loughton03/Azure-SOC](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000090_Remediation_Script.ps1)**
+- **[WN11-CC-000090 - Group Policy objects must be reprocessed even if they have not changed.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000090_Remediation_Script.ps1)**
+
+- **[WN11-AU-000050 - The system must be configured to audit Detailed Tracking - Process Creation success.]()**
+  
+- **[WN11-EP-000310 - Windows 11 Kernel (Direct Memory Access) DMA Protection must be enabled.]()**
+ 
+- **[WN11-CC-000110 - Printing over HTTP must be prevented.]()**
+ 
+- **[WN11-CC-000197 - Microsoft consumer experiences must be turned off.]()**
+  
+- **[WN11-CC-000285 - The Remote Desktop Session Host must require secure RPC communications.]()**
+  
+- **[WN11-CC-000070 - Virtualization-based Security must be enabled on Windows 11 with the platform security level configured to Secure Boot or Secure Boot with DMA Protection.]()**
+  
+- **[WN11-AU-000560 - Windows 11 must be configured to audit other Logon/Logoff Events Successes.]()**
+  
+- **[WN11-CC-000255 - The use of a hardware security device with Windows Hello for Business must be enabled.]()**
+
+
+
+
+- **[WN11-CC-000090 - Group Policy objects must be reprocessed even if they have not changed.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000090_Remediation_Script.ps1)**
+      
 - 
 - WN11-AU-000050 - The system must be configured to audit Detailed Tracking - Process Creation success.
 - WN11-EP-000310 - Windows 11 Kernel (Direct Memory Access) DMA Protection must be enabled.

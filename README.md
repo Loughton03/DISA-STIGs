@@ -18,7 +18,7 @@ STIG Remediation Template
   
 - **[WN11-CC-000285 - The Remote Desktop Session Host must require secure RPC communications.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000285_Remediation_Script.ps1)**
   
-- **[WN11-CC-000070 - Virtualization-based Security must be enabled on Windows 11 with the platform security level configured to Secure Boot or Secure Boot with DMA Protection.]()**
+- **[WN11-CC-000070 - Virtualization-based Security must be enabled on Windows 11 with the platform security level configured to Secure Boot or Secure Boot with DMA Protection.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000070_Remediation_Script.ps1)**
   
 - **[WN11-AU-000560 - Windows 11 must be configured to audit other Logon/Logoff Events Successes.]()**
   

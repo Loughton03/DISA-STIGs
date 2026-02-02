@@ -93,7 +93,6 @@ I located the corresponding policy/setting on the Windows 11 machine and confirm
 
 * Verifying the HKEY_LOCAL_MACHINE registry path exists.
 * Confirming the presence of the expected value.
-* Ensuring the value type is correct (e.g., DWORD).
 * Confirming the configured data matches the STIG requirement.
 
 Operational validation (Tenable re-scan):

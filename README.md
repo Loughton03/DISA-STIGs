@@ -2,7 +2,7 @@
 
 
 # Defense Information Systems Agency - Security Technical Implementation Guides (DISA - STIGs)
-STIG Remediation Template
+- **[STIG Remediation Template](https://github.com/Loughton03/DISA-STIGs/blob/main/Disa_Stig_Remediation_Template.ps1)
 
 ## Windows 11 STIG Remediation Scripts:
 

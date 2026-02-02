@@ -12,7 +12,7 @@ STIG Remediation Template
   
 - **[WN11-EP-000310 - Windows 11 Kernel (Direct Memory Access) DMA Protection must be enabled.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-EP-000310_Remediation_Script.ps1)**
  
-- **[WN11-CC-000110 - Printing over HTTP must be prevented.]()**
+- **[WN11-CC-000110 - Printing over HTTP must be prevented.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000110_Remediation_Script.ps1)**
  
 - **[WN11-CC-000197 - Microsoft consumer experiences must be turned off.]()**
   

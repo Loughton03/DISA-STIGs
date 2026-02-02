@@ -1,8 +1,9 @@
-<img width="937" height="536" alt="image" src="https://github.com/user-attachments/assets/5ba50597-29a7-4573-a009-6c4ca59b46b5" />
+<img width="938" height="520" alt="image" src="https://github.com/user-attachments/assets/301a546e-48ef-4247-a35d-c6da01ed5d5f" />
+
 
 
 # Defense Information Systems Agency - Security Technical Implementation Guides (DISA - STIGs)
-- **[STIG Remediation Template](https://github.com/Loughton03/DISA-STIGs/blob/main/Disa_Stig_Remediation_Template.ps1)
+- **[STIG Remediation Template](https://github.com/Loughton03/DISA-STIGs/blob/main/Disa_Stig_Remediation_Template.ps1)**
 
 ## Windows 11 STIG Remediation Scripts:
 

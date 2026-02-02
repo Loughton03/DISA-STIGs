@@ -25,7 +25,7 @@
   
 - **[WN11-CC-000255 - The use of a hardware security device with Windows Hello for Business must be enabled.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-CC-000255_Remediation_Script.ps1)**
 
-- **[WN11-AC-000010 - The number of allowed bad logon attempts must be configured to three or less.]()**
+- **[WN11-AC-000010 - The number of allowed bad logon attempts must be configured to three or less.](https://github.com/Loughton03/DISA-STIGs/blob/main/WN11-AC-000010)**
 
 ## Platforms and Languages Leveraged:
 
